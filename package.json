@@ -45,6 +45,9 @@
     "package": "npm test && node -e \"require('node:fs').mkdirSync('dist', { recursive: true })\" && vsce package --allow-missing-repository --out dist/"
   },
   "devDependencies": {
-    "@vscode/vsce": "4.0.0"
+    "@vscode/vsce": "4.1.0"
+  },
+  "allowScripts": {
+    "@vscode/vsce-sign@2.1.0": true
   }
 }
