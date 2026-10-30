@@ -1,0 +1,16 @@
+.git/**
+.github/**
+node_modules/**
+test/**
+docs/**
+samples/**
+dist/**
+AGENTS.md
+PUBLISHING.md
+Makefile
+.node-version
+package-lock.json
+*.vsix
+.vscode/**
+scripts/**
+.gitignore

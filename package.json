@@ -1,0 +1,50 @@
+{
+  "name": "sunnyside-theme",
+  "publisher": "portenez",
+  "version": "0.1.2",
+  "displayName": "Sunnyside",
+  "description": "Warm light and dark themes with colorful syntax and Markdown highlighting.",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Sunnyside Dark",
+        "uiTheme": "vs-dark",
+        "path": "./sunnyside-dark.json"
+      },
+      {
+        "label": "Sunnyside Light",
+        "uiTheme": "vs",
+        "path": "./sunnyside-light.json"
+      }
+    ],
+    "semanticTokenTypes": [
+      {
+        "id": "sunnysideTableHeader",
+        "description": "Markdown table header row"
+      }
+    ]
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/portenez/sunnyside-vscode-theme.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "palette": "node scripts/palette.js",
+    "test": "node --test test/*.test.js",
+    "package": "npm test && node -e \"require('node:fs').mkdirSync('dist', { recursive: true })\" && vsce package --allow-missing-repository --out dist/"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.0.0"
+  }
+}
