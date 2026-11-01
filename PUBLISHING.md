@@ -25,6 +25,8 @@ unzip -l dist/sunnyside-theme-0.1.2.vsix
 
 Use the current version in the archive filename. Tests cover Markdown table detection and theme structure. Packaging runs the tests again and invokes the pinned `@vscode/vsce`. Inspect the archive: runtime files, themes, README, changelog, and license should be present; development configuration, samples, tests, credentials, and personal notes should be absent.
 
+The packaging tool currently needs a scoped `minimatch` override to `11.0.1` for [GHSA-g3hv-75wg-m249](https://github.com/advisories/GHSA-g3hv-75wg-m249). Remove the override when `@vscode/vsce` accepts a patched version upstream. Review archive contents when updating it because the dependency controls file inclusion.
+
 **Test and package** runs on pull requests and pushes to `main`, or manually. Download `sunnyside-vsix` from the workflow run's artifacts. These Node tests do not launch VS Code or prove visual appearance.
 
 ## Visual and packaged testing
