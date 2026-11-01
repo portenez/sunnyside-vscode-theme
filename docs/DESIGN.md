@@ -33,7 +33,7 @@ Markdown source uses the same color vocabulary as JavaScript and TypeScript:
 
 Both hash headings and underline-style H1/H2 receive heading styles. Comments use italics; emphasis, links, inline code, list markers, and fence labels have dedicated styles. Fenced code retains its embedded language highlighting.
 
-VS Code's bundled Markdown grammar does not distinguish table header rows. The extension supplies a Markdown semantic token provider that detects a header followed by a delimiter row. Both themes style `sunnysideTableHeader.markdown` in bold amber. These rules target the source editor, not the rendered Markdown preview.
+VS Code's bundled Markdown grammar does not distinguish table header rows. The extension supplies a Markdown semantic token provider that detects a header followed by a delimiter row. Both themes style `sunnysideTableHeader:markdown` in bold amber. These rules target the source editor, not the rendered Markdown preview.
 
 ## Maintenance
 

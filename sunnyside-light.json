@@ -364,7 +364,7 @@
     "type": "#8844AC",
     "parameter": "#934D26",
     "property": "#007368",
-    "sunnysideTableHeader.markdown": {
+    "sunnysideTableHeader:markdown": {
       "foreground": "#A95500",
       "bold": true
     }

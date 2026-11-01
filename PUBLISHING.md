@@ -44,6 +44,8 @@ Use the current version in the archive filename. Tests cover Markdown table dete
 
 5. Select both themes, repeat the checks, reload the window, and confirm table highlighting still works. Test the minimum supported VS Code version (1.90) and current stable before release. Record which versions were actually tested.
 
+See `docs/VERIFICATION.md` for the tested versions, results, and outstanding release checks.
+
 ## GitHub publishing authentication
 
 Use Microsoft Entra ID with GitHub OIDC. Microsoft's publishing guide announces retirement of global Azure DevOps PATs on **December 1, 2026**, so this workflow does not depend on a stored `VSCE_PAT`.
