@@ -50,27 +50,34 @@ See `docs/VERIFICATION.md` for the tested versions, results, and outstanding rel
 
 ## GitHub publishing authentication
 
-Use Microsoft Entra ID with GitHub OIDC. Microsoft's publishing guide announces retirement of global Azure DevOps PATs on **December 1, 2026**, so this workflow does not depend on a stored `VSCE_PAT`.
+Use Visual Studio Marketplace Trusted Publishing with GitHub OIDC. This route needs the Microsoft account that owns the publisher and the GitHub repository; it does not need an Azure subscription, managed identity, PAT, or stored publishing secrets.
 
-1. Create a user-assigned managed identity in your own Azure subscription. Record its client ID, tenant ID, and subscription ID. Follow Microsoft's Marketplace identity setup, including any required Azure role assignment.
-2. Add a federated credential for GitHub Actions:
-   - Issuer: `https://token.actions.githubusercontent.com`
-   - Subject: `repo:OWNER/REPO:environment:marketplace` (replace with the actual repository)
-   - Audience: `api://AzureADTokenExchange`
-3. Authenticate as that identity and retrieve its Azure DevOps profile ID with the command in Microsoft's guide. Add that ID to your Marketplace publisher as a **Contributor**. The profile ID differs from the Azure client ID.
-4. Create a GitHub environment named `marketplace`. Configure required reviewers where your GitHub plan supports them, prevent self-review if appropriate, and restrict deployment branches/tags to reviewed release refs. The workflow itself does not enforce a particular branch or tag.
-5. Add environment secrets `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, and `AZURE_SUBSCRIPTION_ID`. These identify the OIDC identity; no client secret or PAT is used.
+The workflow already uses the `marketplace` environment. Keep its deployment branch policy restricted to `main`. Configure required reviewers where your GitHub plan supports them. Without required reviewers, selecting **publish** is the final publishing action after packaging succeeds.
 
-The publishing job alone receives `id-token: write`. `azure/login` establishes an Azure CLI session, and `vsce publish --azure-credential` uses it. The package job has no publishing credentials. Azure identity registration and publisher membership must be verified in your account before the first release.
+When ready to authorize publishing, sign into Marketplace as the publisher owner, open `portenez`, and select **Trusted Publishing**. Create a policy with these exact values:
 
-References: [Microsoft publishing guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#secure-automated-publishing-to-visual-studio-marketplace), [Azure Login OIDC setup](https://github.com/Azure/login#login-with-openid-connect-oidc-recommended), and [GitHub deployment environments](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
+| Field | Value |
+| --- | --- |
+| Policy name | Sunnyside GitHub release |
+| Repository owner | `portenez` |
+| Repository | `sunnyside-vscode-theme` |
+| Workflow | `release.yml` |
+| Environment | `marketplace` |
+
+Creating this policy grants publishing access to the matching workflow. Review repository write access and workflow changes before creating it. Keep `id-token: write` limited to the publishing job, which downloads the tested VSIX and runs `vsce publish --oidc --packagePath dist/*.vsix`.
+
+For a private repository, the configured workflow must complete its first successful token exchange within 48 hours of policy creation. Create the policy close to the authorized release; a package-only rehearsal skips authentication and does not activate it. Do not run a publish command just to test authentication.
+
+No policy has been created as part of the workflow migration. Confirm it separately in Marketplace before release. Never put Microsoft sign-in credentials, recovery codes, or private email aliases in this repository.
+
+References: [Microsoft Trusted Publishing guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#publish-with-github-actions-and-trusted-publishing) and [GitHub deployment environments](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
 
 ## Prepare a release without publishing
 
 1. Set the intended version in `package.json` and `package-lock.json`, update `CHANGELOG.md`, and review the changes.
 2. Once GitHub hosting is authorized and the workflow is on the default branch, open **Actions → Prepare or publish release → Run workflow**.
 3. Select the reviewed branch or tag, enter the exact manifest version, and leave **publish** unchecked.
-4. Download `release-vsix` and complete the packaged visual checks above. This run never authenticates to Azure or publishes.
+4. Download `release-vsix` and complete the packaged visual checks above. This run never requests publishing credentials or publishes.
 
 ## Publish later
 
