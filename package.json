@@ -1,8 +1,9 @@
 {
   "name": "sunnyside-theme",
   "publisher": "portenez",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "displayName": "Sunnyside",
+  "icon": "images/icon.png",
   "description": "Warm light and dark themes with colorful syntax and Markdown highlighting.",
   "engines": {
     "vscode": "^1.90.0"
