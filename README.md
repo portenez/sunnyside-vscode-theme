@@ -22,11 +22,11 @@ Warm light and dark themes inspired by Sunnyside, Queens. Cream, amber, and char
 
 See the [palette and design guide](docs/DESIGN.md) for color swatches, hex values, and syntax roles.
 
-## Try Sunnyside
+## Install
 
-Sunnyside is being prepared for its first Marketplace release. For now, build a VSIX using the development instructions below.
+Install [Sunnyside from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=portenez.sunnyside-theme), or search for `@id:portenez.sunnyside-theme` in VS Code's Extensions view.
 
-In a separate VS Code testing profile, open the Extensions view, choose **Install from VSIX…**, and select the file in `dist/`. Then run **Preferences: Color Theme** and choose **Sunnyside Light** or **Sunnyside Dark**.
+Run **Preferences: Color Theme** and choose **Sunnyside Light** or **Sunnyside Dark**.
 
 VS Code 1.90 or later is required. Fonts are not bundled; choose any editor font you enjoy. Font ligatures are optional.
 
