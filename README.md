@@ -30,6 +30,10 @@ Run **Preferences: Color Theme** and choose **Sunnyside Light** or **Sunnyside D
 
 VS Code 1.90 or later is required. Fonts are not bundled; choose any editor font you enjoy. Font ligatures are optional.
 
+## Ghostty
+
+Matching Light and Dark themes are available in the [Ghostty directory](https://github.com/portenez/sunnyside-vscode-theme/tree/main/ghostty), with installation and automatic appearance switching instructions.
+
 ## Markdown highlighting
 
 The extension highlights Markdown source; it does not style the rendered preview. A small semantic token provider identifies table headers locally. It makes no network calls and writes no files.

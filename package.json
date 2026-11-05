@@ -41,6 +41,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "ghostty": "node scripts/ghostty.js",
     "palette": "node scripts/palette.js",
     "test": "node --test test/*.test.js",
     "package": "npm test && node -e \"require('node:fs').mkdirSync('dist', { recursive: true })\" && vsce package --allow-missing-repository --out dist/"

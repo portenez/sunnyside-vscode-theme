@@ -37,6 +37,8 @@ VS Code's bundled Markdown grammar does not distinguish table header rows. The e
 
 ## Maintenance
 
+Ghostty themes in `ghostty/` are generated from these same terminal colors with `npm run ghostty`. They use the editor selection background and terminal text color for selections, and the terminal background for text under the cursor. Run `node scripts/ghostty.js --check` to check that the generated files match the source.
+
 - Edit `sunnyside-light.json` and `sunnyside-dark.json` in this repository. Keep corresponding syntax roles aligned.
 - Use the F5 launch configuration to review changes in an Extension Development Host.
 - Review `samples/MARKDOWN-SAMPLE.md` and `samples/sunnyside.ts`, then check the integrated terminal in both themes.
