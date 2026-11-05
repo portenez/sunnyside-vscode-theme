@@ -65,64 +65,64 @@
     <text x="52" y="838" fill="#332B23" opacity="0.8" font-size="14">Syntax accents shown against the editor background</text>
   </g>
 <g>
-    <rect x="544" y="90" width="508" height="766" rx="18" fill="#14120F"/>
-    <text x="572" y="140" fill="#F3EADB" font-size="27" font-weight="700">Sunnyside Dark</text>
+    <rect x="544" y="90" width="508" height="766" rx="18" fill="#24211D"/>
+    <text x="572" y="140" fill="#D2C8B9" font-size="27" font-weight="700">Sunnyside Dark</text>
     <g>
-      <rect x="572" y="178" width="42" height="34" rx="7" fill="#14120F" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="201" fill="#F3EADB" font-size="18">Background</text>
-      <text x="900" y="201" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#14120F</text>
+      <rect x="572" y="178" width="42" height="34" rx="7" fill="#24211D" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="201" fill="#D2C8B9" font-size="18">Background</text>
+      <text x="900" y="201" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#24211D</text>
     </g>
 <g>
-      <rect x="572" y="236" width="42" height="34" rx="7" fill="#F3EADB" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="259" fill="#F3EADB" font-size="18">Text</text>
-      <text x="900" y="259" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#F3EADB</text>
+      <rect x="572" y="236" width="42" height="34" rx="7" fill="#D2C8B9" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="259" fill="#D2C8B9" font-size="18">Text</text>
+      <text x="900" y="259" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#D2C8B9</text>
     </g>
 <g>
-      <rect x="572" y="294" width="42" height="34" rx="7" fill="#B5AA99" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="317" fill="#F3EADB" font-size="18">Comments</text>
-      <text x="900" y="317" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#B5AA99</text>
+      <rect x="572" y="294" width="42" height="34" rx="7" fill="#A09688" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="317" fill="#D2C8B9" font-size="18">Comments</text>
+      <text x="900" y="317" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#A09688</text>
     </g>
 <g>
-      <rect x="572" y="352" width="42" height="34" rx="7" fill="#F1C06B" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="375" fill="#F3EADB" font-size="18">Keywords / H1</text>
-      <text x="900" y="375" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#F1C06B</text>
+      <rect x="572" y="352" width="42" height="34" rx="7" fill="#D8A044" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="375" fill="#D2C8B9" font-size="18">Keywords / H1</text>
+      <text x="900" y="375" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#D8A044</text>
     </g>
 <g>
-      <rect x="572" y="410" width="42" height="34" rx="7" fill="#B9CF8A" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="433" fill="#F3EADB" font-size="18">Strings / H5</text>
-      <text x="900" y="433" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#B9CF8A</text>
+      <rect x="572" y="410" width="42" height="34" rx="7" fill="#A5B58A" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="433" fill="#D2C8B9" font-size="18">Strings / H5</text>
+      <text x="900" y="433" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#A5B58A</text>
     </g>
 <g>
-      <rect x="572" y="468" width="42" height="34" rx="7" fill="#F08D83" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="491" fill="#F3EADB" font-size="18">Constants / H6</text>
-      <text x="900" y="491" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#F08D83</text>
+      <rect x="572" y="468" width="42" height="34" rx="7" fill="#CF886C" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="491" fill="#D2C8B9" font-size="18">Constants / H6</text>
+      <text x="900" y="491" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#CF886C</text>
     </g>
 <g>
-      <rect x="572" y="526" width="42" height="34" rx="7" fill="#8FBFD0" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="549" fill="#F3EADB" font-size="18">Functions / H3</text>
-      <text x="900" y="549" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#8FBFD0</text>
+      <rect x="572" y="526" width="42" height="34" rx="7" fill="#92AFBA" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="549" fill="#D2C8B9" font-size="18">Functions / H3</text>
+      <text x="900" y="549" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#92AFBA</text>
     </g>
 <g>
-      <rect x="572" y="584" width="42" height="34" rx="7" fill="#CFACE1" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="607" fill="#F3EADB" font-size="18">Types / H2</text>
-      <text x="900" y="607" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#CFACE1</text>
+      <rect x="572" y="584" width="42" height="34" rx="7" fill="#A59AB1" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="607" fill="#D2C8B9" font-size="18">Types / H2</text>
+      <text x="900" y="607" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#A59AB1</text>
     </g>
 <g>
-      <rect x="572" y="642" width="42" height="34" rx="7" fill="#83CDBB" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="665" fill="#F3EADB" font-size="18">Properties / H4</text>
-      <text x="900" y="665" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#83CDBB</text>
+      <rect x="572" y="642" width="42" height="34" rx="7" fill="#8BB8AA" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="665" fill="#D2C8B9" font-size="18">Properties / H4</text>
+      <text x="900" y="665" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#8BB8AA</text>
     </g>
 <g>
-      <rect x="572" y="700" width="42" height="34" rx="7" fill="#E5C6A0" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="723" fill="#F3EADB" font-size="18">Parameters</text>
-      <text x="900" y="723" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#E5C6A0</text>
+      <rect x="572" y="700" width="42" height="34" rx="7" fill="#BFAF98" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="723" fill="#D2C8B9" font-size="18">Parameters</text>
+      <text x="900" y="723" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#BFAF98</text>
     </g>
 <g>
-      <rect x="572" y="758" width="42" height="34" rx="7" fill="#E8A23A" stroke="#F3EADB" stroke-opacity="0.25"/>
-      <text x="630" y="781" fill="#F3EADB" font-size="18">Tags</text>
-      <text x="900" y="781" fill="#F3EADB" font-family="ui-monospace, Menlo, monospace" font-size="17">#E8A23A</text>
+      <rect x="572" y="758" width="42" height="34" rx="7" fill="#C39A5D" stroke="#D2C8B9" stroke-opacity="0.25"/>
+      <text x="630" y="781" fill="#D2C8B9" font-size="18">Tags</text>
+      <text x="900" y="781" fill="#D2C8B9" font-family="ui-monospace, Menlo, monospace" font-size="17">#C39A5D</text>
     </g>
-    <text x="572" y="838" fill="#F3EADB" opacity="0.8" font-size="14">Syntax accents shown against the editor background</text>
+    <text x="572" y="838" fill="#D2C8B9" opacity="0.8" font-size="14">Syntax accents shown against the editor background</text>
   </g>
     <text x="28" y="885" fill="#493D30" font-size="15">Same roles, different contrast. H1–H6 indicate Markdown heading levels.</text>
   </g>

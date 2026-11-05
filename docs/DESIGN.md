@@ -14,7 +14,9 @@ Run `npm run palette` after changing either theme to regenerate this chart from 
 
 Sunnyside Light uses warm paper (`#F8F2E8`) and dark brown text (`#332B23`). Its deeper accents preserve contrast against the light background.
 
-Sunnyside Dark uses warm charcoal (`#14120F`) with cream text and brighter accents. Each variant defines its own editor, workbench, and integrated terminal colors.
+Sunnyside Dark uses warm charcoal (`#24211D`) with softened cream text (`#D2C8B9`) and muted accents. The lifted background and reduced foreground brightness aim to make long reading sessions more comfortable while preserving distinct syntax roles. Each variant defines its own editor, workbench, and integrated terminal colors.
+
+Dark emphasizes honey-gold (`#D8A044`) for keywords and H1, and terracotta coral (`#CF886C`) for constants and H6. A quieter violet (`#A59AB1`) supports types and H2 so the warm accents lead the palette. The softened background and body text stay unchanged. Ghostty uses the same accents in its ANSI palette.
 
 Keep syntax roles consistent across both themes while choosing foreground colors for each background. Review selections, search matches, diagnostics, and terminal output alongside ordinary source text. Contrast against the base editor background alone does not establish readability in every UI state.
 
