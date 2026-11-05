@@ -4,6 +4,7 @@ node_modules/**
 test/**
 docs/**
 ghostty/**
+neovim/**
 samples/**
 dist/**
 AGENTS.md
@@ -12,6 +13,7 @@ Makefile
 .node-version
 package-lock.json
 *.vsix
+*.log
 .vscode/**
 scripts/**
 .gitignore

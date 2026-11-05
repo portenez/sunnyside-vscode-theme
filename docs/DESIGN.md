@@ -39,6 +39,8 @@ VS Code's bundled Markdown grammar does not distinguish table header rows. The e
 
 ## Maintenance
 
+Neovim's standalone `neovim/colors/sunnyside.lua` is generated with `npm run neovim`. It selects Light or Dark from Neovim's `background` option and maps the shared roles to classic syntax, Tree-sitter, LSP, Markdown, diagnostics, diff, and editor UI groups. Regenerate it after palette changes and run the headless checks documented in `neovim/README.md`.
+
 Ghostty themes in `ghostty/` are generated from these same terminal colors with `npm run ghostty`. They use the editor selection background and terminal text color for selections, and the terminal background for text under the cursor. Run `node scripts/ghostty.js --check` to check that the generated files match the source.
 
 - Edit `sunnyside-light.json` and `sunnyside-dark.json` in this repository. Keep corresponding syntax roles aligned.
